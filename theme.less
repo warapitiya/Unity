@@ -1,0 +1,190 @@
+/*
+ * Brackets Theme Unity
+ *
+ * Author : Malindu Warapitiya
+ * Can you by anyone free of charge
+ * 
+ */
+/* Less Variables */
+
+@background: #272A32;
+@foreground: #ddd;
+@comment-gray: #767676;
+/* Code Styling */
+
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #2f2f2f;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #fff;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: #E9DA5E;
+}
+
+.cm-number {
+    color: #A1E450;
+}
+
+.cm-attribute,
+.cm-plus {
+    color: #74EDA2;
+}
+
+.cm-def,
+.cm-property {
+    color: #74EDA2;
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @foreground;
+}
+
+.cm-comment {
+    color: @comment-gray;
+}
+
+.cm-error,
+.cm-minus {
+    color: #EB5656;
+}
+
+.cm-header {
+    color: #d85896;
+}
+
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+
+//.cm-m-xml {
+//    color: aqua
+//}
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote {
+    color: #EB5656;
+}
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #EB5656;
+    &.searching-current-match {
+        background-color: #f6a644;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #767676;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: #41454E;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    
+    background-color: @comment-gray;
+    color: @foreground !important;
+}
+
+.CodeMirror-nonmatchingbracket {
+    color: #f00 !important;
+    text-shadow: 0 0 10px #f00;
+    backface-visibility: hidden;
+    font-weight: bold;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+/* CodeMirror CSS */
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #767676;
+    }
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #2f2f2f;
+    }
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+    }
+}
+/* Non-editor styling */
+
+#working-set-list-container {
+    background: #fff;
+}
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}

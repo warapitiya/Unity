@@ -1,0 +1,17 @@
+{
+    "name": "warapitiya.unity",
+    "title": "Unity",
+    "version": "1.0.0",
+    "homepage": "https://github.com/warapitiya/Unity",
+    "description": "Brackets theme",
+    "keywords": [
+    "theme"
+  ],
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "author": "Malindu Warapitiya <warapitiya93@gmail.com>",
+    "license": "MIT"
+}
